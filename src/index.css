@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&family=DM+Sans:wght@300;400;500&family=Hanken+Grotesk:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display-lg: "Raleway", ui-sans-serif, system-ui, sans-serif;
+  --font-headline-lg: "Raleway", ui-sans-serif, system-ui, sans-serif;
+  --font-headline-md: "Raleway", ui-sans-serif, system-ui, sans-serif;
+  --font-body-lg: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body-md: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-label-md: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-caption: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-surface: #f9f9f9;
+  --color-surface-dim: #dadada;
+  --color-primary: #745a27;
+  --color-primary-container: #c9a96e;
+  --color-on-primary-container: #543d0c;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f3f4;
+  --color-surface-container: #eeeeee;
+  --color-surface-container-high: #e8e8e8;
+  --color-surface-container-highest: #e2e2e2;
+  --color-on-surface: #1a1c1c;
+  --color-on-surface-variant: #4d463a;
+  --color-outline: #7f7668;
+  --color-outline-variant: #d0c5b5;
+  --color-secondary: #5f5e5e;
+  --color-secondary-container: #e4e2e1;
+  --color-on-secondary-fixed: #1b1c1c;
+  --color-secondary-fixed: #e4e2e1;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface antialiased;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .neo-shadow {
+    box-shadow: 0 10px 40px rgba(51, 51, 51, 0.03);
+  }
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
